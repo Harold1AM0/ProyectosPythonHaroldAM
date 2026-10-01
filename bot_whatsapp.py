@@ -12,7 +12,7 @@ from selenium.webdriver.common.keys import Keys
 from concurrent.futures import ThreadPoolExecutor
 import os 
 
-numero_contacto = "+51986268240"
+numero_contacto = "[numero de cel]"
 nombre_contacto = "Harold"
 historial_conversacion = []
 detener = False
@@ -63,7 +63,7 @@ def obtener_respuesta_ia(mensaje):
         return "Disculpa, tengo problemas de conexión en este momento. ¿Podrías intentarlo de nuevo?"
     except KeyError as e:
         print(f"[ERROR API] Respuesta inesperada: {e}")
-        return "Ups, algo raro pasó con mi cerebro artificial 🤖. ¿Intentamos otra vez?"
+        return "Ups, algo raro pasó con mi cerebro artificial . ¿Intentamos otra vez?"
     except Exception as e:
         print(f"[ERROR API] Error general: {e}")
         return "¡Ay! Parece que tengo un pequeño problema técnico. ¡Inténtalo en un momento!"
